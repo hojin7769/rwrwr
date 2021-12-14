@@ -119,6 +119,7 @@ button {
   padding: 30px;
   position: relative;
   text-transform: uppercase;
+  width: 300px;
 }
 
 button::before,
@@ -186,18 +187,15 @@ button:hover {
 		<div class="contain_sub">
 			<div
 				style="background-color: rgba(120, 170, 65, 0.5); border-bottom: 1px solid black; height: 100%; padding: 30px; z-index: -1;">
-				<h1 style="font-size: 60px;">LunchVote</h1>
+				<h1 style="font-size: 60px;">Main_Vote</h1>
 			</div>
 			<div class="contain_main">
 			<div class="contain_main_sub">
 				<div class="buttonPart">
-					<button class="btn-1">뽑기시작</button>
+					<button class="btn-1">올 랜덤 뽑기</button>
 				</div>
 				<div class="buttonPart">
-					<button class="btn-2">뽑기추가</button>
-				</div>
-				<div class="buttonPart">
-					<button class="btn-3">정보보기</button>
+					<button class="btn-2">카테고리만 선택</button>
 				</div>
 			</div>
 			<div style="display: none;">
@@ -217,15 +215,7 @@ button:hover {
 
 	<script type="text/javascript">
 	$(".btn-1").click(function() {
-		location.href = "${pageContext.request.contextPath}/vote/main";
-	});
-		
-	</script>
-	
-	
-	<script type="text/javascript">
-	$(".btn-2").click(function() {
-		location.href = "${pageContext.request.contextPath}/insert/main";
+		location.href = "${pageContext.request.contextPath}/vote/allRandom";
 	});
 		
 	</script>
